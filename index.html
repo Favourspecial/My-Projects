@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Plus project2</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,15 +17,27 @@
   <body>
     <main class="main-container">
       <!--------------current location and time and temperature---------------->
-      <div>
+      <div class="main-container">
         <section class="location">
           <h1 id="city"></h1>
-          <p id="current-date"></p>
+          <ul>
+            <li id="current-date"></li>
+            <li id="describe">Clear</li>
+          </ul>
         </section>
 
-        <div>
-          <h2 id="temperature"></h2>
-          <p id="describe">Mild</p>
+        <div class="row">
+          <div class="col-6">
+            <h2 id="temperature">12°C / °F</h2>
+          </div>
+
+          <div class="col-6">
+            <ul>
+              <li>Precipitation: 0%</li>
+              <li>Humidity: 50%</li>
+              <li>Wind: 2 km/hr</li>
+            </ul>
+          </div>
         </div>
       </div>
       <!----------------Form---------------->
@@ -78,29 +90,6 @@
       </div>
 
       <!---------------------Todays weather------------------------>
-
-      <h4>Today Weather</h4>
-      <section class="by-hour">
-        <div class="square">3 am <br />🌤 <br />14°</div>
-        <div class="square">
-          6am <br />🌤<br />
-          16°
-        </div>
-        <div class="square">
-          9am <br />🌤<br />
-          17°
-        </div>
-        <div class="square">
-          12pm <br />🌤<br />
-          19°
-        </div>
-        <div class="square">3pm <br />☀️ <br />21°</div>
-        <div class="square">6pm <br />☀️ <br />20°</div>
-        <div class="square">
-          9pm <br />🌤<br />
-          18°
-        </div>
-      </section>
     </main>
 
     <script src="./script.js"></script>
