@@ -5,12 +5,78 @@ body {
 }
 
 .main-container {
-  max-width: 600px;
+  max-width: 700px;
   margin: 30px auto;
   padding: 15px;
   border: 1px solid white;
   border-radius: 8px;
   background-color: #363459;
+}
+
+/*............Form.............................*/
+
+#search-form {
+  text-align: center;
+  margin-left: 50px;
+  margin-top: 15px;
+  padding: 0 auto;
+}
+
+#search-input {
+  width: 300px;
+  height: 40px;
+  background: transparent;
+  color: #fff;
+}
+
+.search {
+  width: 100px;
+  height: 40px;
+}
+
+.search:hover {
+  cursor: pointer;
+  background-color: red;
+}
+
+button {
+  background-color: transparent;
+  padding: 10px;
+  color: aliceblue;
+  transition: 200ms all ease-in-out;
+  margin-left: 0px;
+  width: 100px;
+  height: 40px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: red;
+}
+
+/*.............Name and Description.............................*/
+
+.first-wrap {
+  margin-bottom: 20px;
+}
+
+.img-temp img {
+  margin-right: 15px;
+  width: 60px;
+  height: 60px;
+}
+
+.img-temp strong {
+  color: blue;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.img-temp .units {
+  position: relative;
+  font-size: 16px;
+  top: -30px;
 }
 
 h1 {
@@ -31,62 +97,6 @@ li {
   line-height: 15px;
 }
 
-h2 {
-  font-size: 60px;
-  margin-left: 30px;
-}
-
-h4 {
-  color: darksalmon;
-}
-
-.location {
-  width: 100%;
-
-  color: white;
-}
-
-#search-form {
-  text-align: center;
-}
-
-#search-input {
-  width: 200px;
-  height: 50px;
-}
-
-button {
-  background-color: transparent;
-  margin: 10px;
-  padding: 10px;
-  color: aliceblue;
-  transition: 200ms all ease-in-out;
-}
-
-button:hover {
-  cursor: pointer;
-  background-color: red;
-}
-.current-stat {
-  width: 100%;
-}
-
-section.by-hour {
-  flex-wrap: wrap;
-  width: 100%;
-  height: auto;
-}
-.square {
-  background-color: #900c3f;
-  width: 180px;
-  border-radius: 10px;
-  height: 100px;
-  border: 20px auto;
-  display: inline-block;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-.indent {
-  text-indent: 220px;
+.float-left a {
+  text-decoration: none;
 }

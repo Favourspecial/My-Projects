@@ -11,90 +11,70 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="./project2.css" />
+    <script src="./script.js" async></script>
   </head>
   <body>
     <!--------------current location and time and temperature---------------->
     <main class="main-container">
       <div class="first-container">
-        <section class="location">
+        <!----------------Form---------------->
+        <div>
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-6">
+                <input
+                  placeholder="search for a city"
+                  type="search"
+                  autofocus="on"
+                  autocomplete="off"
+                  id="search-input"
+                />
+              </div>
+              <div class="col-3">
+                <input type="submit" value="search" class="search" />
+              </div>
+
+              <div class="col-3">
+                <button id="current-location">Current</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-------------------Name and description---------------------->
+
+        <div class="first-wrap">
           <h1 id="city"></h1>
           <ul>
             <li id="current-date"></li>
             <li id="describe">clear</li>
           </ul>
-        </section>
+        </div>
 
         <div class="row">
           <div class="col-6">
-            <img src="" alt="icon" id="icon" />
-            <h2 id="temperature">12°C / °F</h2>
+            <div class="d-flex img-temp">
+              <img src="" alt="icon" id="icon" class="float-left" />
+
+              <div class="float-left">
+                <strong id="temperature"></strong
+                ><span class="units">°C/<a href="#">°F</a></span>
+              </div>
+            </div>
           </div>
 
           <div class="col-6">
             <ul>
-              
               <li>Humidity: <span id="humidity">50</span>%</li>
               <li>Wind: <span id="wind">2</span> km/hr</li>
             </ul>
           </div>
         </div>
       </div>
-      <!----------------Form---------------->
-      <div id="search-form">
-        <form>
-          <input
-            placeholder="search for a city"
-            type="search"
-            autofocus="on"
-            autocomplete="off"
-            id="search-input"
-          />
-          <input type="submit" value="search" />
-          <button id="current-location">Current</button>
-        </form>
-      </div>
-      <!----------------current stat------------------------->
-      <h4>Current Statistics</h4>
-      <div class="current-stat">
-        <div class="container text-center">
-          <div class="row">
-            <div class="col">
-              23°
-              <p>High</p>
-            </div>
-            <div class="col">
-              7mph
-              <p>Wind</p>
-            </div>
-            <div class="col">
-              05:27
-              <p>Sunrise</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              14°
-              <p>Low</p>
-            </div>
-            <div class="col">
-              0%
-              <p>Rain</p>
-            </div>
-            <div class="col">
-              20:57
-              <p>Sunset</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!---------------------Todays weather------------------------>
     </main>
-
-    <script src="./script.js"></script>
   </body>
 </html>
-
 https://github.com/Favourspecial/My-Projects
