@@ -39,10 +39,23 @@ dateElement.innerHTML = `${days[day]}, ${hours} : ${minutes}`;
 /*..................week 5...........................*/
 function displayWeatherCondition(response) {
   console.log(response);
+  let descriptionElement = document.querySelector("#describe");
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
+  let iconElement = document.querySelector("#icon");
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
+
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  humidityElement.innerHTML = response.data.main.humidity;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}"2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function searchCity(city) {

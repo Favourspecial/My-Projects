@@ -15,27 +15,28 @@
     <link rel="stylesheet" href="./project2.css" />
   </head>
   <body>
+    <!--------------current location and time and temperature---------------->
     <main class="main-container">
-      <!--------------current location and time and temperature---------------->
-      <div class="main-container">
+      <div class="first-container">
         <section class="location">
           <h1 id="city"></h1>
           <ul>
             <li id="current-date"></li>
-            <li id="describe">Clear</li>
+            <li id="describe">clear</li>
           </ul>
         </section>
 
         <div class="row">
           <div class="col-6">
+            <img src="" alt="icon" id="icon" />
             <h2 id="temperature">12°C / °F</h2>
           </div>
 
           <div class="col-6">
             <ul>
-              <li>Precipitation: 0%</li>
-              <li>Humidity: 50%</li>
-              <li>Wind: 2 km/hr</li>
+              
+              <li>Humidity: <span id="humidity">50</span>%</li>
+              <li>Wind: <span id="wind">2</span> km/hr</li>
             </ul>
           </div>
         </div>
